@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/reverse-geocode.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/reverse-geocode",
+      "dest": "api/reverse-geocode.js"
+    }
+  ]
+}
